@@ -13,10 +13,10 @@ def home():
 def handle_webhook():
     data = request.json
     print(data)
-    time.sleep(10)
     print("Finished.")
     # Do something with the webhook data
     return  {
         "success": True,
+        "status":200,
         "payload": {'message' : 'success'}
         }
