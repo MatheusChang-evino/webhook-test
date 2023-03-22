@@ -16,4 +16,7 @@ def handle_webhook():
     time.sleep(10)
     print("Finished.")
     # Do something with the webhook data
-    return 'OK'
+    return  {
+        "success": True,
+        "payload": {'message' : 'success'}
+        }
